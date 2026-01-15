@@ -7,44 +7,73 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
+  <header class="header" id="header">
     <nav class="nav">
       <div class="logo-container">
         <img src="assets/Bekuro_logo.png" alt="Bekuro Logo" class="logo-img">
         <span class="logo-text">Bekuro</span>
       </div>
       <ul class="nav-links">
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#que-es">Qué es Bekuro</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#filosofia">Filosofía</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main class="container">
-    
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
+        <span class="hero-label">Innovación Digital</span>
         <h1 class="hero-title">Bekuro</h1>
         <p class="tagline">
-          Creamos productos digitales enfocados en hábitos, constancia y productividad.
+          Creamos productos digitales enfocados en hábitos, constancia y productividad
         </p>
         <p class="hero-description">
-          Transformamos ideas en soluciones tecnológicas que mejoran tu vida diaria.
+          Transformamos ideas en soluciones tecnológicas que mejoran tu vida diaria. 
+          Combinamos diseño intuitivo con funcionalidad potente para crear experiencias 
+          que realmente marcan la diferencia.
+        </p>
+        <div class="hero-cta">
+          <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué es Bekuro -->
+    <section id="que-es" class="about-section">
+      <div class="section-header">
+        <p class="section-subtitle">Nuestra Esencia</p>
+        <h2 class="section-title">Qué es Bekuro</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          En Bekuro creemos en el poder de los pequeños pasos constantes. Somos un 
+          equipo dedicado a desarrollar herramientas tecnológicas que simplifican 
+          la creación y el seguimiento de hábitos positivos.
+        </p>
+        <p>
+          Combinamos diseño intuitivo con funcionalidad potente para crear experiencias 
+          que realmente marcan la diferencia en la vida de nuestros usuarios. Cada producto 
+          que desarrollamos está pensado para ayudarte a alcanzar tus objetivos de forma 
+          natural y sostenible.
         </p>
       </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="productos" class="products-section">
-      <h2 class="section-title">Nuestros Productos</h2>
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="products-section">
+      <div class="section-header">
+        <p class="section-subtitle">Nuestras Soluciones</p>
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-description">
+          Herramientas diseñadas para ayudarte a alcanzar tus objetivos
+        </p>
+      </div>
       
       <div class="products-grid">
-        
-        <!-- Fluu Card -->
         <article class="product-card">
           <div class="product-header">
             <img src="assets/Fluu_icon.png" alt="Fluu Logo" class="product-logo">
@@ -57,14 +86,14 @@
           </p>
           
           <ul class="product-features">
-            <li>Seguimiento de hábitos intuitivo</li>
+            <li>Seguimiento intuitivo</li>
             <li>Recordatorios personalizables</li>
             <li>Análisis de progreso</li>
             <li>Interfaz minimalista</li>
           </ul>
           
           <a
-            class="button"
+            class="product-button"
             href="https://play.google.com/store/apps/details?id=com.bekuro.flowday"
             target="_blank"
             rel="noopener"
@@ -75,75 +104,87 @@
             </svg>
           </a>
         </article>
+      </div>
+    </section>
 
-        <!-- Kuento Card -->
-        <article class="product-card">
-          <div class="product-header">
-            <img src="assets/Kuento_icon.png" alt="Kuento Logo" class="product-logo">
-            <h3 class="product-title">Kuento</h3>
+    <!-- Filosofía Section -->
+    <section id="filosofia" class="philosophy-section">
+      <div class="section-header">
+        <p class="section-subtitle">Nuestros Valores</p>
+        <h2 class="section-title">Filosofía</h2>
+      </div>
+      <div class="philosophy-grid">
+        <div class="philosophy-card">
+          <div class="philosophy-icon">🎯</div>
+          <h3>Simplicidad</h3>
+          <p>Creemos que las mejores soluciones son las más simples. Eliminamos lo innecesario para enfocarnos en lo que realmente importa.</p>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-icon">🌱</div>
+          <h3>Constancia</h3>
+          <p>Los pequeños pasos consistentes llevan a grandes resultados. Diseñamos para el largo plazo, no para la motivación temporal.</p>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-icon">💡</div>
+          <h3>Innovación</h3>
+          <p>Buscamos constantemente nuevas formas de mejorar la experiencia del usuario y hacer que la tecnología trabaje para ti.</p>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-icon">🤝</div>
+          <h3>Usuario Primero</h3>
+          <p>Cada decisión de diseño y desarrollo se toma pensando en cómo beneficiará mejor a nuestros usuarios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+      <div class="section-header">
+        <p class="section-subtitle">Nuestro Futuro</p>
+        <h2 class="section-title">Roadmap</h2>
+        <p class="section-description">
+          Lo que estamos construyendo para ti
+        </p>
+      </div>
+      <div class="roadmap-container">
+        <div class="roadmap-item completed">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-status">Completado</span>
+            <h3>Lanzamiento de Fluu</h3>
+            <p>Primera versión de nuestra app de seguimiento de hábitos disponible en Google Play.</p>
           </div>
-          
-          <p class="product-description">
-            Tu compañero digital para llevar el control de tus finanzas personales 
-            de manera simple y efectiva.
-          </p>
-          
-          <ul class="product-features">
-            <li>Registro rápido de gastos</li>
-            <li>Categorización automática</li>
-            <li>Reportes visuales</li>
-            <li>Presupuestos inteligentes</li>
-          </ul>
-          
-          <a
-            class="button"
-            href="#"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>Próximamente</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </article>
-
+        </div>
+        <div class="roadmap-item in-progress">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-status">En Progreso</span>
+            <h3>Fluu 2.0</h3>
+            <p>Nuevas funcionalidades: estadísticas avanzadas, temas personalizables y sincronización en la nube.</p>
+          </div>
+        </div>
+        <div class="roadmap-item upcoming">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-status">Próximamente</span>
+            <h3>Kuento</h3>
+            <p>Aplicación de gestión de finanzas personales con categorización inteligente y análisis visuales.</p>
+          </div>
+        </div>
+        <div class="roadmap-item upcoming">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <span class="roadmap-status">Futuro</span>
+            <h3>Ecosistema Bekuro</h3>
+            <p>Integración completa entre todas nuestras apps para una experiencia unificada de productividad.</p>
+          </div>
+        </div>
       </div>
     </section>
-
-    <!-- About Section -->
-    <section id="sobre-nosotros" class="about-section">
-      <h2 class="section-title">Sobre Nosotros</h2>
-      <div class="about-content">
-        <p>
-          En Bekuro creemos en el poder de los pequeños pasos constantes. Nuestro 
-          equipo está dedicado a desarrollar herramientas tecnológicas que simplifican 
-          la creación y el seguimiento de hábitos positivos.
-        </p>
-        <p>
-          Combinamos diseño intuitivo con funcionalidad potente para crear experiencias 
-          que realmente marcan la diferencia en la vida de nuestros usuarios.
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact-section">
-      <h2 class="section-title">Contacto</h2>
-      <p class="contact-text">
-        ¿Tienes preguntas o sugerencias? Nos encantaría escucharte.
-      </p>
-      <a href="mailto:hola@bekuro.com" class="button button-secondary">
-        Enviar mensaje
-      </a>
-    </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      
       <div class="footer-brand">
         <div class="logo-container">
           <img src="assets/Bekuro_logo.png" alt="Bekuro Logo" class="logo-img">
@@ -153,11 +194,11 @@
       </div>
       
       <div class="footer-links">
-        <a href="#productos">Productos</a>
-        <a href="#sobre-nosotros">Sobre nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#que-es">Qué es Bekuro</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#filosofia">Filosofía</a>
+        <a href="#roadmap">Roadmap</a>
       </div>
-      
     </div>
     
     <div class="footer-bottom">
@@ -165,5 +206,27 @@
     </div>
   </footer>
 
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
