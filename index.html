@@ -3,41 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bekuro - Productos Digitales</title>
+  <title>Bekuro — Productos Digitales Profesionales</title>
+  <meta name="description" content="Bekuro: productos digitales que fomentan hábitos, constancia y productividad. Aplicaciones y soluciones empresariales con diseño profesional." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header" id="header">
     <nav class="nav">
-      <div class="logo-container">
+      <div class="logo-container" aria-label="Bekuro - Inicio">
         <img src="assets/Bekuro_logo.png" alt="Bekuro Logo" class="logo-img">
         <span class="logo-text">Bekuro</span>
       </div>
       <ul class="nav-links">
-        <li><a href="#que-es">Qué es Bekuro</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#que-es">Qué es</a></li>
+        <li><a href="#proyectos">Productos</a></li>
         <li><a href="#filosofia">Filosofía</a></li>
         <li><a href="#roadmap">Roadmap</a></li>
       </ul>
+      <!-- botones eliminados para sitio informativo -->
     </nav>
   </header>
 
   <main class="container">
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content">
-        <span class="hero-label">Innovación Digital</span>
-        <h1 class="hero-title">Bekuro</h1>
-        <p class="tagline">
-          Creamos productos digitales enfocados en hábitos, constancia y productividad
-        </p>
-        <p class="hero-description">
-          Transformamos ideas en soluciones tecnológicas que mejoran tu vida diaria. 
-          Combinamos diseño intuitivo con funcionalidad potente para crear experiencias 
-          que realmente marcan la diferencia.
-        </p>
-        <div class="hero-cta">
-          <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-label">Innovación Digital</span>
+          <h1 class="hero-title">Herramientas que impulsan hábitos y productividad</h1>
+          <p class="tagline">Diseño limpio. Tecnología confiable. Resultados medibles.</p>
+          <p class="hero-description">
+            Construimos aplicaciones y soluciones digitales enfocadas en el usuario, con interfaces limpias y rendimiento de clase enterprise.
+            Nos especializamos en convertir ideas en productos escalables.
+          </p>
+          <div class="hero-cta">
+            <a href="#proyectos" class="cta-button">Ver Productos</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>+50k</strong><span>descargas</span></li>
+            <li><strong>4.7</strong><span>rating</span></li>
+            <li><strong>3</strong><span>apps activas</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="device-mockup">
+            <img src="assets/Fluu_icon.png" alt="Fluu mockup" class="device-image">
+            <div class="device-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Bekuro -->
+    <section class="why-section">
+      <div class="section-header">
+        <p class="section-subtitle">Por qué elegirnos</p>
+        <h2 class="section-title">Bekuro en pocas palabras</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Rendimiento</h3>
+          <p>Aplicaciones optimizadas para consumo mínimo de recursos y máxima velocidad.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔒</div>
+          <h3>Privacidad</h3>
+          <p>Diseñadas con principios de privacidad y control de datos desde el inicio.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>Escalabilidad</h3>
+          <p>Arquitectura pensada para crecer con tus necesidades y equipos.</p>
+        </div>
+      </div>
+
+      <div class="trusted-logos">
+        <span>Confían en Bekuro:</span>
+        <div class="logos">
+          <div class="logo-box">Logo A</div>
+          <div class="logo-box">Logo B</div>
+          <div class="logo-box">Logo C</div>
+          <div class="logo-box">Logo D</div>
         </div>
       </div>
     </section>
@@ -77,32 +128,62 @@
         <article class="product-card">
           <div class="product-header">
             <img src="assets/Fluu_icon.png" alt="Fluu Logo" class="product-logo">
-            <h3 class="product-title">Fluu</h3>
+            <div>
+              <h3 class="product-title">Fluu</h3>
+              <p class="product-sub">App de hábitos y rutinas</p>
+            </div>
           </div>
           
           <p class="product-description">
-            Una app para crear hábitos y rutinas sin presión. Diseñada para ayudarte 
-            a mantener la constancia de forma natural y sostenible.
+            Fluu ayuda a crear rutinas sostenibles con recordatorios inteligentes y análisis de progreso.
           </p>
           
           <ul class="product-features">
             <li>Seguimiento intuitivo</li>
             <li>Recordatorios personalizables</li>
             <li>Análisis de progreso</li>
-            <li>Interfaz minimalista</li>
+            <li>Temas y sincronización</li>
           </ul>
           
-          <a
-            class="product-button"
-            href="https://play.google.com/store/apps/details?id=com.bekuro.flowday"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>Descargar en Google Play</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <a class="product-button" href="#" target="_blank" rel="noopener">
+            <span>Descargar</span>
           </a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-logo placeholder">KB</div>
+            <div>
+              <h3 class="product-title">Kuento</h3>
+              <p class="product-sub">Finanzas personales</p>
+            </div>
+          </div>
+          <p class="product-description">Gestión de gastos con categorización inteligente y visualizaciones claras para mejorar tus finanzas.</p>
+          <ul class="product-features">
+            <li>Categorización automática</li>
+            <li>Presupuestos</li>
+            <li>Reportes mensuales</li>
+            <li>Integraciones bancarias</li>
+          </ul>
+          <a class="product-button" href="#">Próximamente</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-header">
+            <div class="product-logo placeholder">BK</div>
+            <div>
+              <h3 class="product-title">Bekuro Suite</h3>
+              <p class="product-sub">Ecosistema integrado</p>
+            </div>
+          </div>
+          <p class="product-description">Plataforma que integra todas nuestras apps para sincronización y análisis cross-app.</p>
+          <ul class="product-features">
+            <li>Sincronización</li>
+            <li>Perfiles compartidos</li>
+            <li>Panel de control</li>
+            <li>APIs públicas</li>
+          </ul>
+          <a class="product-button" href="#">Más información</a>
         </article>
       </div>
     </section>
@@ -182,6 +263,7 @@
       </div>
     </section>
   </main>
+    <!-- sección de contacto eliminada: sitio informativo solamente -->
 
   <footer class="footer">
     <div class="footer-content">
@@ -227,6 +309,15 @@
         }
       });
     });
+
+    // Roadmap reveal on scroll
+    const roadmapItems = document.querySelectorAll('.roadmap-item');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    roadmapItems.forEach(i => io.observe(i));
   </script>
 </body>
 </html>
