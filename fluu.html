@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bekuro — Fluu, tu app de hábitos</title>
+  <meta name="description" content="Fluu es la app de hábitos y rutinas de Bekuro. Seguimiento diario, recordatorios inteligentes y análisis de progreso. Descárgala gratis en Google Play." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#" class="logo-container">
+        <img src="assets/Bekuro_logo.png" alt="Bekuro" class="logo-img">
+        <span class="logo-text">Bekuro</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://bekuro.com" rel="noopener">Bekuro</a></li>
+        <li><a href="#fluu">Fluu</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+      </ul>
+      <a href="https://play.google.com/store/apps/details?id=com.bekuro.flowday" target="_blank" rel="noopener" class="nav-cta">
+        Descargar gratis
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            App de hábitos y rutinas
+          </div>
+          <h1 class="hero-title">
+            Construye hábitos que<br><em>realmente duran</em>
+          </h1>
+          <p class="hero-desc">
+            Fluu te ayuda a crear rutinas sostenibles con seguimiento diario, recordatorios inteligentes y análisis de progreso. Sin gamificación vacía, sin distracciones.
+          </p>
+          <div class="hero-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.bekuro.flowday" target="_blank" rel="noopener" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l12.48-7.2-2.82-2.82-10.76 9.9zM20.44 10.2L17.2 8.34l-3.14 3.14 3.14 3.14 3.26-1.88a1.8 1.8 0 000-3.14zM1.44.84A1.8 1.8 0 001 2v20a1.8 1.8 0 00.44 1.16l.06.06L13.06 11.5v-.28L1.5.78l-.06.06zM4.28.12L16.76 7.32l-2.82 2.82L3.18.24C3.54.12 3.94.16 4.28.32z"/></svg>
+              Google Play
+            </a>
+            <a href="#fluu" class="btn-ghost">Ver la app ↓</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>+50k</strong><span>descargas</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><strong>4.7★</strong><span>en Play Store</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><strong>Gratis</strong><span>para siempre</span></div>
+          </div>
+        </div>
+
+        <!-- PHONE MOCKUP ANIMADO -->
+        <div class="hero-phone" aria-hidden="true">
+          <div class="phone-glow"></div>
+          <div class="phone-shell">
+            <div class="phone-screen">
+
+              <!-- STATUS BAR -->
+              <div class="sb">
+                <span class="sb-time">1:40</span>
+                <div class="sb-notch"></div>
+                <span class="sb-batt">92%</span>
+              </div>
+
+              <!-- SKELETON (visible al inicio) -->
+              <div class="sk-view" id="skView">
+                <div class="sk-line" style="width:72%;height:17px;margin-bottom:5px;"></div>
+                <div class="sk-line" style="width:44%;height:10px;margin-bottom:16px;"></div>
+                <div class="sk-card-box">
+                  <div class="sk-line" style="width:55%;height:9px;align-self:center;"></div>
+                  <div class="sk-circle" style="width:44px;height:44px;align-self:center;"></div>
+                  <div class="sk-line" style="width:50%;height:18px;align-self:center;"></div>
+                  <div class="sk-rect" style="width:75%;height:28px;align-self:center;border-radius:8px;"></div>
+                  <div class="sk-rect" style="width:100%;height:36px;border-radius:12px;"></div>
+                </div>
+                <div class="sk-line" style="width:40%;height:9px;margin-top:12px;"></div>
+                <div class="sk-rect" style="width:100%;height:5px;border-radius:3px;margin-top:5px;"></div>
+                <div class="sk-line" style="width:30%;height:9px;margin-top:4px;margin-bottom:12px;"></div>
+                <div class="sk-line" style="width:35%;height:9px;margin-bottom:7px;"></div>
+                <div class="sk-habit-row">
+                  <div class="sk-circle" style="width:28px;height:28px;"></div>
+                  <div style="flex:1;display:flex;flex-direction:column;gap:5px;">
+                    <div class="sk-line" style="width:58%;height:10px;"></div>
+                    <div class="sk-line" style="width:38%;height:8px;"></div>
+                  </div>
+                </div>
+                <div class="sk-habit-row">
+                  <div class="sk-circle" style="width:28px;height:28px;"></div>
+                  <div style="flex:1;display:flex;flex-direction:column;gap:5px;">
+                    <div class="sk-line" style="width:52%;height:10px;"></div>
+                    <div class="sk-line" style="width:34%;height:8px;"></div>
+                  </div>
+                </div>
+                <div class="sk-habit-row">
+                  <div class="sk-circle" style="width:28px;height:28px;"></div>
+                  <div style="flex:1;display:flex;flex-direction:column;gap:5px;">
+                    <div class="sk-line" style="width:62%;height:10px;"></div>
+                    <div class="sk-line" style="width:42%;height:8px;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CONTENIDO REAL (oculto al inicio) -->
+              <div class="app-view" id="appView">
+                <div class="app-greeting">Buenas tardes, Bekuro 👋</div>
+                <div class="app-date">Sábado, 27 de junio</div>
+
+                <div class="next-card">
+                  <div class="next-label">TU SIGUIENTE PASO</div>
+                  <span class="next-emoji">📚</span>
+                  <div class="next-name">Leer</div>
+                  <div class="next-time">⏰ Hoy a las 14:00</div>
+                  <button class="complete-btn" id="completeBtn">Completar</button>
+                </div>
+
+                <div class="prog-section">
+                  <div class="prog-label">PROGRESO DE HOY</div>
+                  <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+                  <div class="prog-text" id="progText">0 de 4 completados</div>
+                </div>
+
+                <div class="habits-label">MIS HÁBITOS</div>
+                <div class="habits-list">
+                  <div class="h-row" id="hr1">
+                    <div class="h-icon green">🏃</div>
+                    <div class="h-info"><span class="h-name">Ejercicio</span><span class="h-meta">30 min · 7:00 AM</span></div>
+                    <div class="h-check done" id="hc1"><span>✓</span></div>
+                  </div>
+                  <div class="h-row" id="hr2">
+                    <div class="h-icon blue">💧</div>
+                    <div class="h-info"><span class="h-name">Agua</span><span class="h-meta">8 vasos · Todo el día</span></div>
+                    <div class="h-check done" id="hc2"><span>✓</span></div>
+                  </div>
+                  <div class="h-row" id="hr3">
+                    <div class="h-icon orange">🧘</div>
+                    <div class="h-info"><span class="h-name">Meditación</span><span class="h-meta">10 min · 8:00 AM</span></div>
+                    <div class="h-check done" id="hc3"><span>✓</span></div>
+                  </div>
+                  <div class="h-row" id="hr4">
+                    <div class="h-icon purple">📚</div>
+                    <div class="h-info"><span class="h-name">Leer</span><span class="h-meta">20 pág · 2:00 PM</span></div>
+                    <div class="h-check" id="hc4"><span>✓</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NAV BAR -->
+              <div class="app-nav">
+                <div class="an-item active"><span>🏠</span><span class="an-lbl">Inicio</span></div>
+                <div class="an-item"><span>📋</span><span class="an-lbl">Plan</span></div>
+                <div class="an-item"><span>📅</span><span class="an-lbl">Calendario</span></div>
+                <div class="an-item"><span>👤</span><span class="an-lbl">Perfil</span></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- / phone -->
+
+      </div>
+    </section>
+
+    <!-- FLUU SECTION -->
+    <section id="fluu" class="fluu-section">
+      <div class="container fluu-grid">
+
+        <div class="fluu-info">
+          <span class="section-tag">Nuestra app</span>
+          <h2 class="section-title">Fluu</h2>
+          <p class="fluu-tagline">El seguidor de hábitos que sí funciona a largo plazo.</p>
+          <p class="fluu-desc">Sin puntos ni gamificación vacía. Solo un lugar limpio donde ves tu progreso real día a día, con el contexto justo para entender qué está funcionando.</p>
+
+          <ul class="features">
+            <li>
+              <div class="feat-icon">⚡</div>
+              <div>
+                <strong>Seguimiento diario rápido</strong>
+                <p>Marca tus hábitos en segundos desde la pantalla principal.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feat-icon">📊</div>
+              <div>
+                <strong>Estadísticas claras</strong>
+                <p>Ve rachas, tendencias semanales y qué días fallas más.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feat-icon">🔔</div>
+              <div>
+                <strong>Recordatorios inteligentes</strong>
+                <p>Notificaciones configurables por hábito a la hora exacta.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feat-icon">🎨</div>
+              <div>
+                <strong>Diseño sin distracciones</strong>
+                <p>Interfaz limpia con modo oscuro y colores personalizables.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="https://play.google.com/store/apps/details?id=com.bekuro.flowday" target="_blank" rel="noopener" class="btn-primary" style="margin-top:2rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l12.48-7.2-2.82-2.82-10.76 9.9zM20.44 10.2L17.2 8.34l-3.14 3.14 3.14 3.14 3.26-1.88a1.8 1.8 0 000-3.14zM1.44.84A1.8 1.8 0 001 2v20a1.8 1.8 0 00.44 1.16l.06.06L13.06 11.5v-.28L1.5.78l-.06.06zM4.28.12L16.76 7.32l-2.82 2.82L3.18.24C3.54.12 3.94.16 4.28.32z"/></svg>
+            Descargar gratis en Google Play
+          </a>
+        </div>
+
+        <div class="fluu-cards">
+          <div class="fc fc-wide">
+            <div class="fc-label">Racha actual</div>
+            <div class="fc-big">21<span> días</span></div>
+            <div class="fc-week">
+              <div class="fw-day done"><span>L</span></div>
+              <div class="fw-day done"><span>M</span></div>
+              <div class="fw-day done"><span>X</span></div>
+              <div class="fw-day done"><span>J</span></div>
+              <div class="fw-day today"><span>V</span></div>
+              <div class="fw-day"><span>S</span></div>
+              <div class="fw-day"><span>D</span></div>
+            </div>
+          </div>
+          <div class="fc">
+            <div class="fc-label">Completados hoy</div>
+            <div class="fc-big">3<span>/4</span></div>
+          </div>
+          <div class="fc">
+            <div class="fc-label">Mejor racha</div>
+            <div class="fc-big accent">47<span> días</span></div>
+          </div>
+          <div class="fc fc-wide">
+            <div class="fc-label">Esta semana</div>
+            <div class="mini-bars">
+              <div class="mb-wrap"><div class="mb" style="height:60%"></div><span>L</span></div>
+              <div class="mb-wrap"><div class="mb" style="height:80%"></div><span>M</span></div>
+              <div class="mb-wrap"><div class="mb" style="height:100%"></div><span>X</span></div>
+              <div class="mb-wrap"><div class="mb" style="height:75%"></div><span>J</span></div>
+              <div class="mb-wrap"><div class="mb dim" style="height:60%"></div><span>V</span></div>
+              <div class="mb-wrap"><div class="mb empty" style="height:15%"></div><span>S</span></div>
+              <div class="mb-wrap"><div class="mb empty" style="height:15%"></div><span>D</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="team-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Quiénes somos</span>
+          <h2 class="section-title">El equipo</h2>
+          <p class="section-desc">Dos personas construyendo herramientas que usamos nosotros mismos.</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-av" style="background:linear-gradient(135deg,rgba(99,102,241,.25),rgba(99,102,241,.08))">BK</div>
+            <h3 class="team-name">Fundador</h3>
+            <p class="team-role">Diseño &amp; Producto</p>
+            <p class="team-bio">Obsesionado con los hábitos y con hacer que las apps sean realmente útiles. Lleva años construyendo Fluu.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-av" style="background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(99,102,241,.08))">BK</div>
+            <h3 class="team-name">Co-fundador</h3>
+            <p class="team-role">Desarrollo &amp; Backend</p>
+            <p class="team-bio">Full-stack que convierte ideas en código limpio y experiencias que escalan desde el día uno.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta">
+    <div class="container final-cta-inner">
+      <h2>Empieza hoy, es gratis.</h2>
+      <p>Descarga Fluu y comienza a construir tus hábitos en menos de un minuto.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.bekuro.flowday" target="_blank" rel="noopener" class="btn-primary btn-lg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l12.48-7.2-2.82-2.82-10.76 9.9zM20.44 10.2L17.2 8.34l-3.14 3.14 3.14 3.14 3.26-1.88a1.8 1.8 0 000-3.14zM1.44.84A1.8 1.8 0 001 2v20a1.8 1.8 0 00.44 1.16l.06.06L13.06 11.5v-.28L1.5.78l-.06.06zM4.28.12L16.76 7.32l-2.82 2.82L3.18.24C3.54.12 3.94.16 4.28.32z"/></svg>
+        Descargar en Google Play
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo-container">
+        <img src="assets/Bekuro_logo.png" alt="Bekuro" class="logo-img">
+        <span class="logo-text">Bekuro</span>
+      </a>
+      <p class="footer-copy">© 2026 Bekuro. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#fluu">Fluu</a>
+        <a href="#equipo">Equipo</a>
+        <a href="https://play.google.com/store/apps/details?id=com.bekuro.flowday" target="_blank" rel="noopener">Play Store</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Header scroll */
+    const hdr = document.getElementById('header');
+    window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 40), {passive:true});
+
+    /* Smooth scroll */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+
+    /* Phone animation */
+    (function(){
+      var done = 3, total = 4;
+
+      function setProgress(){
+        var pct = Math.round(done/total*100);
+        document.getElementById('progFill').style.width = pct + '%';
+        document.getElementById('progText').textContent = done + ' de ' + total + ' completados';
+      }
+
+      setTimeout(function(){
+        document.getElementById('skView').style.display = 'none';
+        var av = document.getElementById('appView');
+        av.style.opacity = '0';
+        av.style.display = 'flex';
+        requestAnimationFrame(function(){
+          requestAnimationFrame(function(){
+            av.style.transition = 'opacity .5s ease';
+            av.style.opacity = '1';
+          });
+        });
+        setProgress();
+        ['hr1','hr2','hr3','hr4'].forEach(function(id, i){
+          setTimeout(function(){
+            document.getElementById(id).classList.add('visible');
+          }, i * 130);
+        });
+      }, 1800);
+
+      document.getElementById('completeBtn').addEventListener('click', function(){
+        var hc4 = document.getElementById('hc4');
+        if(!hc4.classList.contains('done')){
+          hc4.classList.add('done');
+          done = 4;
+          setProgress();
+          this.textContent = '¡Completado! 🎉';
+          this.style.background = '#2d4a2e';
+          this.disabled = true;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

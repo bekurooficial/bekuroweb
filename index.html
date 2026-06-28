@@ -3,321 +3,274 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bekuro — Productos Digitales Profesionales</title>
-  <meta name="description" content="Bekuro: productos digitales que fomentan hábitos, constancia y productividad. Aplicaciones y soluciones empresariales con diseño profesional." />
+  <title>Bekuro — Productos digitales que construyen hábitos</title>
+  <meta name="description" content="Bekuro es un estudio de productos digitales. Construimos apps enfocadas en hábitos, productividad y bienestar. Conoce Fluu, nuestra primera app." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="bekuro.css" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav">
-      <div class="logo-container" aria-label="Bekuro - Inicio">
-        <img src="assets/Bekuro_logo.png" alt="Bekuro Logo" class="logo-img">
+      <a href="index.html" class="logo-wrap">
+        <img src="assets/Bekuro_logo.png" alt="Bekuro" class="logo-img">
         <span class="logo-text">Bekuro</span>
-      </div>
+      </a>
       <ul class="nav-links">
-        <li><a href="#que-es">Qué es</a></li>
-        <li><a href="#proyectos">Productos</a></li>
-        <li><a href="#filosofia">Filosofía</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#sobre">Nosotros</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#equipo">Equipo</a></li>
       </ul>
-      <!-- botones eliminados para sitio informativo -->
+      <a href="#apps" class="nav-pill">Ver apps</a>
     </nav>
   </header>
 
-  <main class="container">
-    <!-- Hero Section -->
+  <main>
+
+    <!-- ══ HERO ══ -->
     <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <span class="hero-label">Innovación Digital</span>
-          <h1 class="hero-title">Herramientas que impulsan hábitos y productividad</h1>
-          <p class="tagline">Diseño limpio. Tecnología confiable. Resultados medibles.</p>
-          <p class="hero-description">
-            Construimos aplicaciones y soluciones digitales enfocadas en el usuario, con interfaces limpias y rendimiento de clase enterprise.
-            Nos especializamos en convertir ideas en productos escalables.
+      <div class="container">
+
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Estudio de productos digitales · Colombia
+        </div>
+
+        <h1 class="hero-title">
+          Hacemos apps que<br>
+          <span class="grad">cambian hábitos</span>
+        </h1>
+
+        <p class="hero-sub">
+          En Bekuro construimos herramientas digitales sencillas y poderosas,
+          pensadas para que las personas hagan más de lo que importa — todos los días.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#apps" class="btn-main">Ver nuestras apps</a>
+          <a href="#sobre" class="btn-outline">Conocer Bekuro</a>
+        </div>
+
+        <!-- MARQUEE números flotantes -->
+        <div class="hero-numbers" aria-hidden="true">
+          <div class="hn-card">
+            <strong>+50k</strong>
+            <span>descargas</span>
+          </div>
+          <div class="hn-card">
+            <strong>4.7★</strong>
+            <span>rating promedio</span>
+          </div>
+          <div class="hn-card">
+            <strong>1</strong>
+            <span>app activa</span>
+          </div>
+          <div class="hn-card">
+            <strong>2026</strong>
+            <span>fundado</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- decoración fondo -->
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+    </section>
+
+    <!-- ══ SOBRE BEKURO ══ -->
+    <section id="sobre" class="sobre-section">
+      <div class="container sobre-grid">
+
+        <div class="sobre-copy">
+          <span class="label">Nuestra esencia</span>
+          <h2 class="h2">Bekuro en pocas palabras</h2>
+          <p>
+            Somos un estudio pequeño con una obsesión grande: hacer que la tecnología
+            ayude a las personas a vivir mejor, no a distraerlas más.
           </p>
-          <div class="hero-cta">
-            <a href="#proyectos" class="cta-button">Ver Productos</a>
-          </div>
-          <ul class="hero-stats">
-            <li><strong>+50k</strong><span>descargas</span></li>
-            <li><strong>4.7</strong><span>rating</span></li>
-            <li><strong>3</strong><span>apps activas</span></li>
-          </ul>
-        </div>
-
-        <div class="hero-media" aria-hidden="true">
-          <div class="device-mockup">
-            <img src="assets/Fluu_icon.png" alt="Fluu mockup" class="device-image">
-            <div class="device-glow"></div>
+          <p>
+            Cada app que lanzamos nace de un problema real que nosotros mismos tuvimos.
+            Diseñamos simple, construimos rápido y mejoramos escuchando a quienes nos usan.
+          </p>
+          <div class="sobre-pills">
+            <span>Diseño limpio</span>
+            <span>Privacidad primero</span>
+            <span>Sin suscripciones trampa</span>
+            <span>Hecho en Colombia</span>
           </div>
         </div>
+
+        <div class="sobre-visual">
+          <div class="sv-card sv-card-top">
+            <div class="sv-icon">🎯</div>
+            <strong>Simplicidad</strong>
+            <p>Si hay algo que sobra, lo quitamos.</p>
+          </div>
+          <div class="sv-card sv-card-mid">
+            <div class="sv-icon">🌱</div>
+            <strong>Constancia</strong>
+            <p>Pequeños pasos, grandes resultados.</p>
+          </div>
+          <div class="sv-card sv-card-bot">
+            <div class="sv-icon">💡</div>
+            <strong>Innovación</strong>
+            <p>Tecnología que trabaja para ti.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- Why Bekuro -->
-    <section class="why-section">
-      <div class="section-header">
-        <p class="section-subtitle">Por qué elegirnos</p>
-        <h2 class="section-title">Bekuro en pocas palabras</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">⚡</div>
-          <h3>Rendimiento</h3>
-          <p>Aplicaciones optimizadas para consumo mínimo de recursos y máxima velocidad.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🔒</div>
-          <h3>Privacidad</h3>
-          <p>Diseñadas con principios de privacidad y control de datos desde el inicio.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🤝</div>
-          <h3>Escalabilidad</h3>
-          <p>Arquitectura pensada para crecer con tus necesidades y equipos.</p>
-        </div>
-      </div>
+    <!-- ══ APPS ══ -->
+    <section id="apps" class="apps-section">
+      <div class="container">
 
-      <div class="trusted-logos">
-        <span>Confían en Bekuro:</span>
-        <div class="logos">
-          <div class="logo-box">Logo A</div>
-          <div class="logo-box">Logo B</div>
-          <div class="logo-box">Logo C</div>
-          <div class="logo-box">Logo D</div>
+        <div class="section-header">
+          <span class="label">Lo que construimos</span>
+          <h2 class="h2">Nuestras apps</h2>
+          <p class="section-sub">Herramientas reales para problemas reales.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Qué es Bekuro -->
-    <section id="que-es" class="about-section">
-      <div class="section-header">
-        <p class="section-subtitle">Nuestra Esencia</p>
-        <h2 class="section-title">Qué es Bekuro</h2>
-      </div>
-      <div class="about-content">
-        <p>
-          En Bekuro creemos en el poder de los pequeños pasos constantes. Somos un 
-          equipo dedicado a desarrollar herramientas tecnológicas que simplifican 
-          la creación y el seguimiento de hábitos positivos.
-        </p>
-        <p>
-          Combinamos diseño intuitivo con funcionalidad potente para crear experiencias 
-          que realmente marcan la diferencia en la vida de nuestros usuarios. Cada producto 
-          que desarrollamos está pensado para ayudarte a alcanzar tus objetivos de forma 
-          natural y sostenible.
-        </p>
-      </div>
-    </section>
+        <div class="apps-grid">
 
-    <!-- Proyectos Section -->
-    <section id="proyectos" class="products-section">
-      <div class="section-header">
-        <p class="section-subtitle">Nuestras Soluciones</p>
-        <h2 class="section-title">Proyectos</h2>
-        <p class="section-description">
-          Herramientas diseñadas para ayudarte a alcanzar tus objetivos
-        </p>
-      </div>
-      
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-header">
-            <img src="assets/Fluu_icon.png" alt="Fluu Logo" class="product-logo">
-            <div>
-              <h3 class="product-title">Fluu</h3>
-              <p class="product-sub">App de hábitos y rutinas</p>
+          <!-- FLUU — activa -->
+          <a href="fluu.html" class="app-card app-card-featured">
+            <div class="ac-top">
+              <div class="ac-icon">
+                <img src="assets/Fluu_icon.png" alt="Fluu" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="ac-icon-fallback" style="display:none">FL</div>
+              </div>
+              <div class="ac-badge ac-badge-live">
+                <span class="ac-badge-dot"></span>
+                Disponible
+              </div>
             </div>
-          </div>
-          
-          <p class="product-description">
-            Fluu ayuda a crear rutinas sostenibles con recordatorios inteligentes y análisis de progreso.
-          </p>
-          
-          <ul class="product-features">
-            <li>Seguimiento intuitivo</li>
-            <li>Recordatorios personalizables</li>
-            <li>Análisis de progreso</li>
-            <li>Temas y sincronización</li>
-          </ul>
-          
-          <a class="product-button" href="#" target="_blank" rel="noopener">
-            <span>Descargar</span>
+            <h3 class="ac-name">Fluu</h3>
+            <p class="ac-tagline">App de hábitos y rutinas</p>
+            <p class="ac-desc">Seguimiento diario, recordatorios inteligentes y análisis de progreso. Sin gamificación vacía.</p>
+            <div class="ac-stats">
+              <span>+50k descargas</span>
+              <span>4.7★ en Play Store</span>
+              <span>Gratis</span>
+            </div>
+            <div class="ac-cta">
+              Ver Fluu
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
           </a>
-        </article>
 
-        <article class="product-card">
-          <div class="product-header">
-            <div class="product-logo placeholder">KB</div>
-            <div>
-              <h3 class="product-title">Kuento</h3>
-              <p class="product-sub">Finanzas personales</p>
+          <!-- PRÓXIMAMENTE 1 -->
+          <div class="app-card app-card-soon">
+            <div class="ac-top">
+              <div class="ac-icon ac-icon-soon">KB</div>
+              <div class="ac-badge ac-badge-soon">Próximamente</div>
+            </div>
+            <h3 class="ac-name">Kuento</h3>
+            <p class="ac-tagline">Finanzas personales</p>
+            <p class="ac-desc">Gestión de gastos con categorización inteligente y visualizaciones claras.</p>
+            <div class="ac-lock">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              En desarrollo
             </div>
           </div>
-          <p class="product-description">Gestión de gastos con categorización inteligente y visualizaciones claras para mejorar tus finanzas.</p>
-          <ul class="product-features">
-            <li>Categorización automática</li>
-            <li>Presupuestos</li>
-            <li>Reportes mensuales</li>
-            <li>Integraciones bancarias</li>
-          </ul>
-          <a class="product-button" href="#">Próximamente</a>
-        </article>
 
-        <article class="product-card">
-          <div class="product-header">
-            <div class="product-logo placeholder">BK</div>
-            <div>
-              <h3 class="product-title">Bekuro Suite</h3>
-              <p class="product-sub">Ecosistema integrado</p>
+          <!-- PRÓXIMAMENTE 2 -->
+          <div class="app-card app-card-soon">
+            <div class="ac-top">
+              <div class="ac-icon ac-icon-soon">BS</div>
+              <div class="ac-badge ac-badge-soon">Próximamente</div>
+            </div>
+            <h3 class="ac-name">Bekuro Suite</h3>
+            <p class="ac-tagline">Ecosistema integrado</p>
+            <p class="ac-desc">Plataforma que conecta todas nuestras apps en una experiencia unificada.</p>
+            <div class="ac-lock">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              En desarrollo
             </div>
           </div>
-          <p class="product-description">Plataforma que integra todas nuestras apps para sincronización y análisis cross-app.</p>
-          <ul class="product-features">
-            <li>Sincronización</li>
-            <li>Perfiles compartidos</li>
-            <li>Panel de control</li>
-            <li>APIs públicas</li>
-          </ul>
-          <a class="product-button" href="#">Más información</a>
-        </article>
+
+        </div>
+
       </div>
     </section>
 
-    <!-- Filosofía Section -->
-    <section id="filosofia" class="philosophy-section">
-      <div class="section-header">
-        <p class="section-subtitle">Nuestros Valores</p>
-        <h2 class="section-title">Filosofía</h2>
-      </div>
-      <div class="philosophy-grid">
-        <div class="philosophy-card">
-          <div class="philosophy-icon">🎯</div>
-          <h3>Simplicidad</h3>
-          <p>Creemos que las mejores soluciones son las más simples. Eliminamos lo innecesario para enfocarnos en lo que realmente importa.</p>
+    <!-- ══ EQUIPO ══ -->
+    <section id="equipo" class="team-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Quiénes somos</span>
+          <h2 class="h2">El equipo</h2>
+          <p class="section-sub">Dos personas construyendo herramientas que usamos nosotros mismos.</p>
         </div>
-        <div class="philosophy-card">
-          <div class="philosophy-icon">🌱</div>
-          <h3>Constancia</h3>
-          <p>Los pequeños pasos consistentes llevan a grandes resultados. Diseñamos para el largo plazo, no para la motivación temporal.</p>
-        </div>
-        <div class="philosophy-card">
-          <div class="philosophy-icon">💡</div>
-          <h3>Innovación</h3>
-          <p>Buscamos constantemente nuevas formas de mejorar la experiencia del usuario y hacer que la tecnología trabaje para ti.</p>
-        </div>
-        <div class="philosophy-card">
-          <div class="philosophy-icon">🤝</div>
-          <h3>Usuario Primero</h3>
-          <p>Cada decisión de diseño y desarrollo se toma pensando en cómo beneficiará mejor a nuestros usuarios.</p>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-av" style="background:linear-gradient(135deg,rgba(99,102,241,.25),rgba(99,102,241,.08))">BK</div>
+            <h3>Fundador</h3>
+            <span class="team-role">Diseño &amp; Producto</span>
+            <p>Obsesionado con los hábitos y con hacer que las apps sean realmente útiles. Lleva años construyendo Fluu.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-av" style="background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(99,102,241,.08))">BK</div>
+            <h3>Co-fundador</h3>
+            <span class="team-role">Desarrollo &amp; Backend</span>
+            <p>Full-stack que convierte ideas en código limpio y experiencias que escalan desde el día uno.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="roadmap-section">
-      <div class="section-header">
-        <p class="section-subtitle">Nuestro Futuro</p>
-        <h2 class="section-title">Roadmap</h2>
-        <p class="section-description">
-          Lo que estamos construyendo para ti
-        </p>
-      </div>
-      <div class="roadmap-container">
-        <div class="roadmap-item completed">
-          <div class="roadmap-marker"></div>
-          <div class="roadmap-content">
-            <span class="roadmap-status">Completado</span>
-            <h3>Lanzamiento de Fluu</h3>
-            <p>Primera versión de nuestra app de seguimiento de hábitos disponible en Google Play.</p>
-          </div>
-        </div>
-        <div class="roadmap-item in-progress">
-          <div class="roadmap-marker"></div>
-          <div class="roadmap-content">
-            <span class="roadmap-status">En Progreso</span>
-            <h3>Fluu 2.0</h3>
-            <p>Nuevas funcionalidades: estadísticas avanzadas, temas personalizables y sincronización en la nube.</p>
-          </div>
-        </div>
-        <div class="roadmap-item upcoming">
-          <div class="roadmap-marker"></div>
-          <div class="roadmap-content">
-            <span class="roadmap-status">Próximamente</span>
-            <h3>Kuento</h3>
-            <p>Aplicación de gestión de finanzas personales con categorización inteligente y análisis visuales.</p>
-          </div>
-        </div>
-        <div class="roadmap-item upcoming">
-          <div class="roadmap-marker"></div>
-          <div class="roadmap-content">
-            <span class="roadmap-status">Futuro</span>
-            <h3>Ecosistema Bekuro</h3>
-            <p>Integración completa entre todas nuestras apps para una experiencia unificada de productividad.</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
-    <!-- sección de contacto eliminada: sitio informativo solamente -->
+
+  <!-- ══ CTA FINAL ══ -->
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <div class="cta-final-text">
+        <h2>¿Listo para empezar?</h2>
+        <p>Descarga Fluu gratis y empieza a construir hábitos hoy.</p>
+      </div>
+      <a href="fluu.html" class="btn-main">
+        Conocer Fluu
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <div class="logo-container">
-          <img src="assets/Bekuro_logo.png" alt="Bekuro Logo" class="logo-img">
-          <span class="logo-text">Bekuro</span>
-        </div>
-        <p>Tecnología para mejorar tu día a día</p>
-      </div>
-      
+    <div class="container footer-inner">
+      <a href="index.html" class="logo-wrap">
+        <img src="assets/Bekuro_logo.png" alt="Bekuro" class="logo-img">
+        <span class="logo-text">Bekuro</span>
+      </a>
+      <p class="footer-copy">© 2026 Bekuro. Todos los derechos reservados.</p>
       <div class="footer-links">
-        <a href="#que-es">Qué es Bekuro</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#filosofia">Filosofía</a>
-        <a href="#roadmap">Roadmap</a>
+        <a href="#sobre">Nosotros</a>
+        <a href="fluu.html">Fluu</a>
+        <a href="https://play.google.com/store/apps/details?id=com.bekuro.flowday" target="_blank" rel="noopener">Play Store</a>
       </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>© 2026 Bekuro. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <script>
-    // Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+    const hdr = document.getElementById('header');
+    window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 40), {passive:true});
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
       });
     });
 
-    // Roadmap reveal on scroll
-    const roadmapItems = document.querySelectorAll('.roadmap-item');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.15 });
-    roadmapItems.forEach(i => io.observe(i));
+    /* Stagger de cards al entrar en viewport */
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if(en.isIntersecting) en.target.classList.add('in'); });
+    }, {threshold: 0.12});
+    document.querySelectorAll('.app-card, .sv-card, .team-card').forEach(el => obs.observe(el));
   </script>
+
 </body>
 </html>
