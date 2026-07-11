@@ -108,7 +108,7 @@ body {
   display:flex; justify-content:space-between; align-items:center; gap:2rem;
 }
 .logo-wrap { display:flex; align-items:center; gap:.6rem; text-decoration:none; }
-.logo-img { width:34px; height:34px; object-fit:contain; }
+.logo-img { width:60px; height:60px; object-fit:contain; }
 .logo-text {
   font-size:1.28rem; font-weight:800; letter-spacing:-.5px;
   background:linear-gradient(135deg,#fff 30%,var(--indigo2));
