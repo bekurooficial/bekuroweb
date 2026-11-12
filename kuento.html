@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bekuro — Kuento, tu plata sin enredos</title>
+  <meta name="description" content="Kuento te ayuda a anotar tus gastos e ingresos y a entender en qué se va tu plata, sin enredos." />
+  <meta property="og:title" content="Bekuro — Kuento, tu plata sin enredos" />
+  <meta property="og:description" content="Una forma clara y cálida de ordenar tus finanzas personales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bekuro.com/kuento.html" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="assets/bekuro_icon.ico" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./kuento.css" />
+</head>
+<body class="kuento-page">
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="logo-container"><span class="logo-text">Bekuro</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Bekuro</a></li>
+        <li><a href="#kuento">Kuento</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+      <button class="nav-cta disabled-button" type="button" disabled aria-disabled="true">Próximamente</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="kuento">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge"><span class="badge-dot"></span>Finanzas personales</div>
+          <h1 class="hero-title">Tu plata, <br><em>sin enredos</em></h1>
+          <p class="hero-desc">Kuento te ayuda a anotar tus gastos e ingresos en segundos y a entender en qué se va tu plata cada mes. Claro, cálido y sin complicaciones.</p>
+          <div class="hero-actions">
+            <button class="btn-primary disabled-button" type="button" disabled aria-disabled="true">Próximamente en Google Play</button>
+            <a href="#kuento-app" class="btn-ghost">Conoce Kuento ↓</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>Próximamente</strong><span>producto en preparación</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><strong>Android</strong><span>disponible al publicar</span></div>
+          </div>
+        </div>
+
+        <div class="hero-phone" aria-label="Vista de ejemplo de la pantalla de inicio de Kuento">
+          <div class="phone-glow"></div>
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="sb"><span class="sb-time">9:41</span><div class="sb-notch"></div><span class="sb-batt">100%</span></div>
+              <div class="kuento-screen">
+                <div class="kuento-greeting">¡Hola, Michael! 👋</div>
+                <div class="kuento-date">Así va tu plata hoy</div>
+                <div class="kuento-balance">
+                  <span class="kuento-balance-label">Disponible</span>
+                  <strong class="kuento-balance-amount">$1.250.000</strong>
+                  <div class="kuento-balance-grid">
+                    <div><span>Ingresado</span><strong>$2.800.000</strong></div>
+                    <div><span>Gastado</span><strong>$1.550.000</strong></div>
+                  </div>
+                </div>
+                <div class="kuento-encouragement">Vas bien. Un movimiento a la vez. 🌱</div>
+                <div class="kuento-movement-label">Movimientos de hoy</div>
+                <div class="kuento-movements">
+                  <div class="kuento-movement"><span class="kuento-movement-icon">🍽️</span><span class="kuento-movement-name">Almuerzo</span><strong class="kuento-movement-amount">-$18.000</strong></div>
+                  <div class="kuento-movement"><span class="kuento-movement-icon">🚌</span><span class="kuento-movement-name">Transporte</span><strong class="kuento-movement-amount">-$6.500</strong></div>
+                </div>
+              </div>
+              <div class="app-nav kuento-screen-nav">
+                <div class="an-item active"><span>🏠</span><span class="an-lbl">Inicio</span></div>
+                <div class="an-item"><span>🧾</span><span class="an-lbl">Movimientos</span></div>
+                <div class="an-item"><span>📊</span><span class="an-lbl">Estadísticas</span></div>
+                <div class="an-item"><span>👤</span><span class="an-lbl">Perfil</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TODO: agregar assets/kuento-mascota.png cuando esté disponible. -->
+    </section>
+
+    <section id="kuento-app" class="fluu-section">
+      <div class="container fluu-grid">
+        <div class="fluu-info">
+          <span class="section-tag">Nuestra app</span>
+          <h2 class="section-title">Kuento</h2>
+          <p class="fluu-tagline">Ordena tu plata con calma y claridad.</p>
+          <p class="fluu-desc">Kuento convierte tus movimientos del día a día en una vista sencilla de cómo estás usando tu plata.</p>
+          <ul class="features">
+            <li><div class="feat-icon">✍️</div><div><strong>Anota en segundos</strong><p>Registra gastos e ingresos con pocos toques y categorías fáciles de entender.</p></div></li>
+            <li><div class="feat-icon">📊</div><div><strong>Estadísticas claras</strong><p>Consulta el resumen por mes, tus gastos por categoría y la comparación con el mes anterior.</p></div></li>
+            <li><div class="feat-icon">🔔</div><div><strong>Recordatorio diario</strong><p>Activa un aviso a la hora que elijas para no olvidar anotar tus movimientos.</p></div></li>
+            <li><div class="feat-icon">🔐</div><div><strong>Tus datos, tuyos</strong><p>Respaldo en la nube, modo claro y oscuro, exportación a CSV y eliminación de tu cuenta cuando quieras.</p></div></li>
+          </ul>
+          <button class="btn-primary disabled-button" type="button" disabled aria-disabled="true" style="margin-top:2rem;">Próximamente en Google Play</button>
+        </div>
+        <div class="fluu-cards" aria-label="Resumen de funciones de Kuento">
+          <div class="fc fc-wide"><div class="fc-label">Una mirada tranquila</div><div class="fc-big">Tu plata<span> · entendida</span></div><div class="fc-week"><div class="fw-day done"><span>ENE</span></div><div class="fw-day done"><span>FEB</span></div><div class="fw-day today"><span>MAR</span></div></div></div>
+          <div class="fc"><div class="fc-label">Movimientos</div><div class="fc-big">Rápido<span> de anotar</span></div></div>
+          <div class="fc"><div class="fc-label">Tus categorías</div><div class="fc-big accent">Claras<span> y útiles</span></div></div>
+          <div class="fc fc-wide"><div class="fc-label">Sin complicaciones</div><div class="fc-big">Un paso<span> a la vez</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas" class="faq-section">
+      <div class="container">
+        <div class="section-header"><span class="section-tag">Preguntas frecuentes</span><h2 class="section-title">Lo importante, claro</h2><p class="section-desc">Si algo no queda claro, escríbenos y lo conversamos.</p></div>
+        <div class="faq-list">
+          <details class="faq-item"><summary>¿Kuento es gratis?</summary><p class="faq-answer">Kuento llegará próximamente a Google Play. Cuando se publique, indicaremos claramente qué funciones están disponibles y bajo qué condiciones.</p></details>
+          <details class="faq-item"><summary>¿Dónde se guardan mis datos?</summary><p class="faq-answer">Tus datos de cuenta y movimientos se almacenan en Supabase con acceso restringido a tu propia cuenta. Tus preferencias se guardan en tu dispositivo.</p></details>
+          <details class="faq-item"><summary>¿Se conecta con mi banco?</summary><p class="faq-answer">No. Kuento no se conecta a cuentas bancarias: tú anotas tus movimientos manualmente.</p></details>
+          <details class="faq-item"><summary>¿Puedo cambiar de moneda?</summary><p class="faq-answer">Sí. Puedes cambiar la moneda en la que se muestran tus montos. Kuento no convierte valores ni hace conversiones de moneda.</p></details>
+          <details class="faq-item"><summary>¿Cómo elimino mi cuenta?</summary><p class="faq-answer">Desde la app ve a Perfil &gt; Configuración &gt; Eliminar mi cuenta. También puedes consultar nuestra <a href="kuento-eliminar-cuenta.html">página para eliminar cuenta</a>.</p></details>
+          <details class="faq-item"><summary>¿Cómo contacto a soporte?</summary><p class="faq-answer">Escríbenos a <a href="mailto:bekurooficial@gmail.com">bekurooficial@gmail.com</a> y te responderemos.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <span class="section-tag">Estamos para ayudarte</span>
+        <h2 class="section-title">¿Tienes una pregunta?</h2>
+        <p class="section-desc">Cuéntanos qué necesitas y conversemos sobre Kuento.</p>
+        <a class="contact-link" href="mailto:bekurooficial@gmail.com">bekurooficial@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <section class="final-cta">
+    <div class="container final-cta-inner">
+      <div><h2>Empieza a ordenar tu plata</h2><p>Kuento llegará pronto para ayudarte a ver tus movimientos con más calma.</p></div>
+      <a class="btn-primary" href="#preguntas">Resolver mis preguntas</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo-container"><span class="logo-text">Bekuro</span></a>
+      <p class="footer-copy">© 2026 Bekuro. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#kuento">Kuento</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="kuento-privacidad.html">Privacidad de Kuento</a>
+        <a href="kuento-terminos.html">Términos de Kuento</a>
+        <a href="kuento-eliminar-cuenta.html">Eliminar cuenta</a>
+        <a href="mailto:bekurooficial@gmail.com">Soporte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const PLAY_URL_KUENTO = ''; // TODO: activar cuando Kuento se publique en Google Play.
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 40), { passive: true });
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) { event.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+</html>
