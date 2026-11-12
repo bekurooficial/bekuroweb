@@ -398,6 +398,7 @@ body {
   border-radius:100px;
   font-size:.75rem; color:var(--t2); font-weight:500;
 }
+.ac-stats span:first-child { color:#b9c1ff; border-color:rgba(99,102,241,.24); }
 
 .ac-cta {
   display:inline-flex; align-items:center; gap:.5rem;
