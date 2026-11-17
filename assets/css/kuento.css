@@ -585,7 +585,7 @@ body.kuento-page::before {
 }
 
 .kuento-page .header.scrolled {
-  background: rgba(8, 12, 24, .9);
+  background: var(--kuento-bg);
   border-bottom-color: var(--kuento-border-dark);
 }
 
@@ -718,7 +718,7 @@ body.kuento-page::before {
 }
 
 .kuento-page .footer {
-  background: var(--kuento-bg2);
+  background: var(--kuento-bg);
   border-top-color: var(--kuento-border-dark);
 }
 
